@@ -1,0 +1,29 @@
+﻿<Window x:Class="ConvertImages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConvertImages"
+        mc:Ignorable="d"
+        Title="Convert and replace files" Height="269.621" Width="379.272">
+    <Grid>
+        <GroupBox Header="Step 1" HorizontalAlignment="Left" Height="209" Margin="16,15,0,0" VerticalAlignment="Top" Width="169"/>
+        <Button Content="Select Folder" HorizontalAlignment="Left" Margin="222,54,0,0" VerticalAlignment="Top" Width="106" Height="138" Click="Button_Click"/>
+        <ComboBox x:Name="cbFileType" HorizontalAlignment="Left" Margin="31,144,0,0" VerticalAlignment="Top" Width="142">
+            <ComboBoxItem Content="bmp"/>
+            <ComboBoxItem Content="emf"/>
+            <ComboBoxItem Content="wmf"/>
+            <ComboBoxItem Content="gif"/>
+            <ComboBoxItem Content="jpeg"/>
+            <ComboBoxItem Content="png" IsSelected="True"/>
+            <ComboBoxItem Content="tiff"/>
+            <ComboBoxItem Content="exif"/>
+            <ComboBoxItem Content="icon"/>
+        </ComboBox>
+        <Label Content="Replace all files into" HorizontalAlignment="Left" Margin="31,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Replace all files into" HorizontalAlignment="Left" Margin="31,54,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSearchPattern" HorizontalAlignment="Left" Height="23" Margin="31,85,0,0" TextWrapping="Wrap" Text="*.tif" VerticalAlignment="Top" Width="142"/>
+        <CheckBox x:Name="cbSubDirectories" Content="Include all subfolders" HorizontalAlignment="Left" Margin="29,182,0,0" VerticalAlignment="Top" Width="144" IsChecked="True" RenderTransformOrigin="-0.227,5.467"/>
+        <GroupBox Header="Step 2" HorizontalAlignment="Left" Height="209" Margin="196,15,0,0" VerticalAlignment="Top" Width="154"/>
+    </Grid>
+</Window>
